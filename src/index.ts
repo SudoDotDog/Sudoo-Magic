@@ -3,3 +3,6 @@
  * @namespace Magic
  * @description Index
  */
+
+export * from "./http";
+
