@@ -1,2 +1,0 @@
-# Sudoo-Magic
-:dove: Magic
