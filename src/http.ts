@@ -6,6 +6,9 @@
 
 export enum HTTP_RESPONSE_CODE {
 
+    CONTINUE = 100,
+    SWITCHING_PROTOCOLS = 101,
+
     OK = 200,
     CREATED = 201,
     ACCEPTED = 202,
