@@ -4,6 +4,7 @@
  * @description Index
  */
 
+export * from "./binary";
 export * from "./http";
 export * from './port';
 export * from "./time";
