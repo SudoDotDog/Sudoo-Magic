@@ -18,9 +18,10 @@ describe('Given a [Distance] enums', (): void => {
         const mile: number = chance.natural({
             max: 5,
         });
-        const expectedKilometer = mile * DISTANCE_CHANGE.MILE_TO_KILO_METER;
 
-        expect(DISTANCE_IN_METERS.MILE * mile).to.be.equal(expectedKilometer);
+        const expectedMeter: number = mile * DISTANCE_CHANGE.METER_TO_KILO_METER * DISTANCE_CHANGE.KILO_METER_TO_MILE;
+
+        expect(DISTANCE_IN_METERS.MILE * mile).to.be.equal(expectedMeter);
     });
 
     it('should be able to convert from meter to mile', (): void => {
@@ -28,8 +29,8 @@ describe('Given a [Distance] enums', (): void => {
         const kilometer: number = chance.natural({
             max: 5,
         });
-        const expectedMile = kilometer / DISTANCE_CHANGE.MILE_TO_KILO_METER;
+        const expectedMile = kilometer * DISTANCE_CHANGE.MILE_TO_KILO_METER;
 
-        expect(DISTANCE_IN_FOOT.KILO_METER * kilometer).to.be.equal(expectedMile);
+        expect(DISTANCE_IN_FOOT.KILO_METER * kilometer).to.be.equal(expectedMile * DISTANCE_CHANGE.FOOT_TO_MILE);
     });
 });
