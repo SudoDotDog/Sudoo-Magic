@@ -1,6 +1,6 @@
 /**
  * @author WMXPY
- * @namespace Magic
+ * @namespace Magic_Time
  * @description Time
  */
 
