@@ -1,6 +1,6 @@
 {
   "name": "@sudoo/magic",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": ":dove: Magic",
   "repository": {
     "type": "git",
@@ -17,8 +17,8 @@
   "homepage": "https://github.com/SudoDotDog/Sudoo-Magic#readme",
   "dependencies": {},
   "devDependencies": {
-    "@sudoo/io": "^1.6.2",
-    "@sudoo/triforce": "^2.1.0"
+    "@sudoo/io": "^1.7.0",
+    "@sudoo/triforce": "^2.2.1"
   },
   "nyc": {
     "extension": [
