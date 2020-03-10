@@ -1,10 +1,10 @@
-import { TIME_IN_MILLISECONDS, TIME_IN_SECONDS } from "./time";
-
 /**
  * @author WMXPY
  * @namespace Magic_Time
  * @description Builder
  */
+
+import { TIME_IN_MILLISECONDS, TIME_IN_SECONDS } from "./time";
 
 export type TimeBuilderArgs = {
 
