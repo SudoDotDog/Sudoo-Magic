@@ -1,4 +1,4 @@
-import { TIME_IN_MILLISECONDS } from "./time";
+import { TIME_IN_MILLISECONDS, TIME_IN_SECONDS } from "./time";
 
 /**
  * @author WMXPY
@@ -55,5 +55,16 @@ export class TimeBuilder {
             + TIME_IN_MILLISECONDS.MINUTE * this._minute
             + TIME_IN_MILLISECONDS.SECOND * this._second
             + this._millisecond;
+    }
+
+    public inSeconds(): number {
+
+        return TIME_IN_SECONDS.YEAR * this._year
+            + TIME_IN_SECONDS.MONTH * this._month
+            + TIME_IN_SECONDS.WEEK * this._week
+            + TIME_IN_SECONDS.DAY * this._day
+            + TIME_IN_SECONDS.HOUR * this._hour
+            + TIME_IN_SECONDS.MINUTE * this._minute
+            + this._second;
     }
 }
