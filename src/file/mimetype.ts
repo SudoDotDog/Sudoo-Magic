@@ -6,4 +6,5 @@
 
 export enum MIMETYPE {
 
+    IMAGE_JPEG = 'image/jpeg',
 }
