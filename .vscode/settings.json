@@ -13,7 +13,8 @@
         "splited",
         "sudoo",
         "triforce",
-        "tshook"
+        "tshook",
+        "webp"
     ],
     "tslint.configFile": "typescript/tslint.json"
 }
