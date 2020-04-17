@@ -7,7 +7,7 @@
 
 import { expect } from 'chai';
 import * as Chance from 'chance';
-import { DISTANCE_CHANGE, DISTANCE_IN_FOOT, DISTANCE_IN_METERS } from '../../src/distance';
+import { DISTANCE_CHANGE, DISTANCE_IN_FOOT, DISTANCE_IN_METERS } from '../../src';
 
 describe('Given a [Distance] enums', (): void => {
 

@@ -6,7 +6,7 @@
 
 export * from "./binary/binary";
 export * from "./binary/builder";
-export * from "./distance";
+export * from "./distance/distance";
 export * from "./file/extension";
 export * from "./file/mimetype";
 export * from "./http";
