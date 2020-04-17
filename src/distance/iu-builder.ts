@@ -30,7 +30,7 @@ export class IUDistanceBuilder {
         this._mile = args.mile ?? 0;
     }
 
-    public inFoot(): number {
+    public inFoots(): number {
 
         return DISTANCE_IN_FOOT.MILE * this._mile
             + DISTANCE_IN_FOOT.YARD * this._yard
