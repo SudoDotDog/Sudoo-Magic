@@ -4,7 +4,7 @@
  * @description Index
  */
 
-export * from "./binary";
+export * from "./binary/binary";
 export * from "./distance";
 export * from "./file/extension";
 export * from "./file/mimetype";
