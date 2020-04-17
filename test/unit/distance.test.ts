@@ -1,6 +1,6 @@
 /**
  * @author WMXPY
- * @namespace Magic
+ * @namespace Magic_Distance
  * @description Distance
  * @override Unit
  */
@@ -11,7 +11,7 @@ import { DISTANCE_CHANGE, DISTANCE_IN_FOOT, DISTANCE_IN_METERS } from '../../src
 
 describe('Given a [Distance] enums', (): void => {
 
-    const chance: Chance.Chance = new Chance('magic-distance');
+    const chance: Chance.Chance = new Chance('magic-distance-distance');
 
     it('should be able to convert from mile to meter', (): void => {
 
