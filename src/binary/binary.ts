@@ -1,6 +1,6 @@
 /**
  * @author WMXPY
- * @namespace Magic
+ * @namespace Magic_Binary
  * @description Binary
  */
 
@@ -16,4 +16,6 @@ export enum BINARY_SIZE {
     MB = BINARY_SIZE.KB * BINARY_CONVERT.UNIT,
     GB = BINARY_SIZE.MB * BINARY_CONVERT.UNIT,
     TB = BINARY_SIZE.GB * BINARY_CONVERT.UNIT,
+    PB = BINARY_SIZE.TB * BINARY_CONVERT.UNIT,
+    EB = BINARY_SIZE.PB * BINARY_CONVERT.UNIT,
 }
