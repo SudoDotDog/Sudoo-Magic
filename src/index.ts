@@ -5,6 +5,7 @@
  */
 
 export * from "./binary/binary";
+export * from "./binary/builder";
 export * from "./distance";
 export * from "./file/extension";
 export * from "./file/mimetype";
