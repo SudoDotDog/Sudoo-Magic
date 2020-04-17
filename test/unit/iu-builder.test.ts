@@ -7,7 +7,7 @@
 
 import { expect } from 'chai';
 import * as Chance from 'chance';
-import { IUDistanceBuilder } from '../../src/distance/iu-builder';
+import { IUDistanceBuilder } from '../../src';
 
 describe('Given a {IUDistanceBuilder} class', (): void => {
 
@@ -20,6 +20,6 @@ describe('Given a {IUDistanceBuilder} class', (): void => {
         });
 
         // tslint:disable-next-line: no-magic-numbers
-        expect(builder.inFoot()).to.be.equal(26400);
+        expect(builder.inFoots()).to.be.equal(26400);
     });
 });

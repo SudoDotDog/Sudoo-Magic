@@ -7,19 +7,29 @@
 
 import { expect } from 'chai';
 import * as Chance from 'chance';
-import { IUDistanceBuilder } from '../../src/distance/iu-builder';
+import { SIDistanceBuilder } from '../../src';
 
-describe('Given a {IUDistanceBuilder} class', (): void => {
+describe('Given a {SIDistanceBuilder} class', (): void => {
 
-    const chance: Chance.Chance = new Chance('magic-distance-iu-builder');
+    const chance: Chance.Chance = new Chance('magic-distance-si-builder');
 
-    it('should be able to build foot', (): void => {
+    it('should be able to build meter', (): void => {
 
-        const builder: IUDistanceBuilder = IUDistanceBuilder.from({
-            mile: 5,
+        const builder: SIDistanceBuilder = SIDistanceBuilder.from({
+            kilometer: 5,
         });
 
         // tslint:disable-next-line: no-magic-numbers
-        expect(builder.inFoots()).to.be.equal(26400);
+        expect(builder.inMeters()).to.be.equal(5000);
+    });
+
+    it('should be able to convert to mile', (): void => {
+
+        const builder: SIDistanceBuilder = SIDistanceBuilder.from({
+            kilometer: 5,
+        });
+
+        // tslint:disable-next-line: no-magic-numbers
+        expect(builder.convertToMiles().toFixed(2)).to.be.equal('3.11');
     });
 });
