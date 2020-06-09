@@ -14,7 +14,9 @@ const packagePath: string = Path.join(__dirname, '..', 'package.json');
 const license: string = Fs.readFileSync(licensePath, 'utf8');
 Fs.writeFileSync(Path.join(appPath, 'LICENSE'), license, 'utf8');
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const parent: any = JSON.parse(Fs.readFileSync(packagePath, 'utf8'));
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const appPackage: any = {
     name: parent.name,
     main: "index.js",

@@ -11,6 +11,7 @@ import { SIDistanceBuilder } from '../../src';
 
 describe('Given a {SIDistanceBuilder} class', (): void => {
 
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const chance: Chance.Chance = new Chance('magic-distance-si-builder');
 
     it('should be able to build meter', (): void => {

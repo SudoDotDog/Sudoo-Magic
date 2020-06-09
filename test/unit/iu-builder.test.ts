@@ -11,6 +11,7 @@ import { IUDistanceBuilder } from '../../src';
 
 describe('Given a {IUDistanceBuilder} class', (): void => {
 
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const chance: Chance.Chance = new Chance('magic-distance-iu-builder');
 
     it('should be able to build foot', (): void => {
