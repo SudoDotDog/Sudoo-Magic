@@ -70,3 +70,6 @@ export enum HTTP_RESPONSE_CODE {
     LOOP_DETECTED = 508,
     NETWORK_AUTHENTICATION_REQUIRED = 511,
 }
+
+const a = Math.max(10, 102455555);
+console.log(a);
