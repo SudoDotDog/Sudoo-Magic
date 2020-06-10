@@ -17,10 +17,7 @@
   "homepage": "https://github.com/SudoDotDog/Sudoo-Magic#readme",
   "devDependencies": {
     "@sudoo/io": "^1.8.0",
-    "@sudoo/triforce": "^2.4.1",
-    "@typescript-eslint/eslint-plugin": "^3.2.0",
-    "@typescript-eslint/parser": "^3.2.0",
-    "eslint": "^7.2.0"
+    "@sudoo/triforce": "^2.5.0-beta.2"
   },
   "nyc": {
     "extension": [
