@@ -15,16 +15,12 @@
     "url": "https://github.com/SudoDotDog/Sudoo-Magic/issues"
   },
   "homepage": "https://github.com/SudoDotDog/Sudoo-Magic#readme",
-  "dependencies": {
-    "@sudoo/eslint-config": "^0.0.1"
-  },
   "devDependencies": {
     "@sudoo/io": "^1.8.0",
     "@sudoo/triforce": "^2.4.1",
     "@typescript-eslint/eslint-plugin": "^3.2.0",
     "@typescript-eslint/parser": "^3.2.0",
-    "eslint": "^7.2.0",
-    "eslint-config-myrules": "^0.2.0"
+    "eslint": "^7.2.0"
   },
   "nyc": {
     "extension": [
