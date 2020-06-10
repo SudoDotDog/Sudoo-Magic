@@ -19,8 +19,7 @@ describe('Given a {IUDistanceBuilder} class', (): void => {
         const builder: IUDistanceBuilder = IUDistanceBuilder.from({
             mile: 5,
         });
-
-        // tslint:disable-next-line: no-magic-numbers
+        // eslint-disable-next-line @typescript-eslint/no-magic-numbers
         expect(builder.inFoots()).to.be.equal(26400);
     });
 });

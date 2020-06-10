@@ -6,6 +6,7 @@ dev := typescript/tsconfig.dev.json
 tsc := node_modules/.bin/tsc
 ts_node := node_modules/.bin/ts-node
 mocha := node_modules/.bin/mocha
+eslint := node_modules/.bin/eslint
 
 .IGNORE: clean-linux
 
@@ -27,6 +28,10 @@ cov:
 	@echo "[INFO] Testing with Nyc and Mocha"
 	@NODE_ENV=test \
 	nyc $(mocha)
+
+lint:
+	@echo "[INFO] Linting"
+	@$(eslint) . --ext .ts,.tsx --config ./typescript/.eslintrc.json
 
 install:
 	@echo "[INFO] Installing dev Dependencies"
@@ -50,6 +55,10 @@ clean-linux:
 	@rm -rf .nyc_output
 	@rm -rf coverage
 
-publish: install tests license build
+publish: install tests lint license build
 	@echo "[INFO] Publishing package"
 	@cd app && npm publish --access=public
+
+publish-dry-run: install tests lint license build
+	@echo "[INFO] Publishing package"
+	@cd app && npm publish --access=public --dry-run

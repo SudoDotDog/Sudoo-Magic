@@ -20,7 +20,7 @@ describe('Given a {SIDistanceBuilder} class', (): void => {
             kilometer: 5,
         });
 
-        // tslint:disable-next-line: no-magic-numbers
+        // eslint-disable-next-line @typescript-eslint/no-magic-numbers
         expect(builder.inMeters()).to.be.equal(5000);
     });
 
@@ -30,7 +30,7 @@ describe('Given a {SIDistanceBuilder} class', (): void => {
             kilometer: 5,
         });
 
-        // tslint:disable-next-line: no-magic-numbers
+        // eslint-disable-next-line @typescript-eslint/no-magic-numbers
         expect(builder.convertToMiles().toFixed(2)).to.be.equal('3.11');
     });
 });
