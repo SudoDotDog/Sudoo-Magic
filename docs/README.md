@@ -14,3 +14,17 @@ yarn add @sudoo/magic
 # Or
 npm install @sudoo/magic --save
 ```
+
+## Usage
+
+Example usage of time builder
+
+```ts
+import { TimeBuilder } from "@sudoo/magic";
+
+setTimeout(() => {
+    doSomething();
+}, TimeBuilder.from({
+    second: 1,
+}).inMilliseconds());
+```
