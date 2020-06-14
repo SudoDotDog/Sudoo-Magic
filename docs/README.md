@@ -6,3 +6,11 @@
 [![downloads](https://img.shields.io/npm/dm/@sudoo/magic.svg)](https://www.npmjs.com/package/@sudoo/magic)
 
 :dove: Magic
+
+## Install
+
+```sh
+yarn add @sudoo/magic
+# Or
+npm install @sudoo/magic --save
+```
