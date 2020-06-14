@@ -19,7 +19,7 @@ dev:
 build:
 	@echo "[INFO] Building for production"
 	@NODE_ENV=production $(tsc) --p $(build)
-	
+
 tests:
 	@echo "[INFO] Testing with Mocha"
 	@NODE_ENV=test $(mocha) --config test/.mocharc.json
