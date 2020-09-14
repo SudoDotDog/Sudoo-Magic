@@ -20,9 +20,9 @@ export enum PORT_NUMBER {
     NETWORK_TIME_PROTOCOL_PORT = 123,
     POST_OFFICE_PROTOCOL_PORT = 110,
     POSTGRE_SQL_DEFAULT_PORT = 5432,
-    // eslint-disable-next-line no-shadow
+    // eslint-disable-next-line @typescript-eslint/no-shadow
     REDIS_DEFAULT_PORT = 6379,
-    // eslint-disable-next-line no-shadow
+    // eslint-disable-next-line @typescript-eslint/no-shadow
     REDIS_SENTINEL_DEFAULT_PORT = 26379,
     SIMPLE_MAIL_TRANSFER_PROTOCOL_PORT = 25,
     SIMPLE_NETWORK_MANAGEMENT_PROTOCOL_PORT = 161,
