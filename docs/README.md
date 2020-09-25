@@ -15,6 +15,10 @@ yarn add @sudoo/magic
 npm install @sudoo/magic --save
 ```
 
+## Modules
+
+-   [HTTP Module](./http.md)
+
 ## Usage
 
 Example usage of time builder
