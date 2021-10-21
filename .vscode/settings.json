@@ -1,21 +1,22 @@
 {
     "cSpell.words": [
-        "Connor",
-        "Encryptable",
-        "Mimetype",
-        "RMRF",
-        "UNPROCESSABLE",
-        "WMXPY",
         "codecov",
+        "Connor",
         "deserialize",
+        "Encryptable",
         "ifeq",
+        "Mimetype",
         "mocharc",
+        "POSTGRE",
+        "RMRF",
         "setx",
         "splited",
         "sudoo",
         "triforce",
         "tshook",
-        "webp"
+        "UNPROCESSABLE",
+        "webp",
+        "WMXPY"
     ],
     "eslint.options": {
         "configFile": "./typescript/.eslintrc.json"
